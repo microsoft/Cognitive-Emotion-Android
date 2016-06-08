@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 The client library
 ==================
 
