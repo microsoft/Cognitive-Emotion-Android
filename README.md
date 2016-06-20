@@ -6,8 +6,7 @@ This repo contains the Android client library & sample for the Microsoft Emotion
 
 
 ## The client library
-The Emotion API client library is a thin Java client wrapper for Microsoft Cognitive Services (formerly Project Oxford)
-Emotion REST APIs.
+This client library is a thin Java client wrapper for the Microsoft Emotion REST API.
 
 The easiest way to consume the client library is to add com.microsoft.projectoxford.emotion package from Maven Central Repository.
 
@@ -28,14 +27,14 @@ dependencies {
 ```
 
 To do add the client library dependency from Android Studio:
-1. From Menu, Choose File \> Project Structure
-2. Click on your app module
-3. Click on Dependencies tab
-4. Click "+" sign to add new dependency
-5. Pick "Library dependency" from the drop down list
-6. Type "com.microsoft.projectoxford" and hit the search icon from "Choose Library Dependency" dialog
-7. Pick the Project Oxford client library that you intend to use.
-8. Click "OK" to add the new dependency
+ 1. From Menu, Choose File \> Project Structure
+ 2. Click on your app module
+ 3. Click on Dependencies tab
+ 4. Click "+" sign to add new dependency
+ 5. Pick "Library dependency" from the drop down list
+ 6. Type "com.microsoft.projectoxford" and hit the search icon from "Choose Library Dependency" dialog
+ 7. Pick the Project Oxford client library that you intend to use.
+ 8. Click "OK" to add the new dependency
 
 ### Order expressions
 You can call the function ToRankedList from the Scores class, for example:
@@ -92,12 +91,11 @@ If you want to know what is the name of the expression with more value then you 
 
 ## Contributing
 We welcome contributions and are always looking for new SDKs, input, and
-suggestions. Feel free to file issues on the repo and we'll address them as we can. You can also learn more about how you can help on the [Contribution
-Rules & Guidelines](</CONTRIBUTING.md>).
+suggestions. Feel free to file issues on the repo and we'll address them as we can. You can also learn more about how you can help on the [Contribution Rules & Guidelines](</CONTRIBUTING.md>).
 
-For questions, feedback, or suggestions about Microsoft Cognitive Services, feel free to reach out to us directly.
-
--   [Cognitive Services UserVoice Forum](<https://cognitive.uservoice.com>)
+You can reach out to us anytime with questions and suggestions using our communities below:
+ - **Support questions:** [StackOverflow](<https://stackoverflow.com/questions/tagged/microsoft-cognitive>)
+ - **Feedback & feature requests:** [Cognitive Services UserVoice Forum](<https://cognitive.uservoice.com>)
 
 ## License
 All Microsoft Cognitive Services SDKs and samples are licensed with the MIT License. For more details, see
