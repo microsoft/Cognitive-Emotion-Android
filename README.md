@@ -1,5 +1,5 @@
 # Microsoft Emotion API: Android SDK
-This repo contains the Android client library & sample for the Microsoft Emotion API, part of Cognitive Services.
+This repo contains the Android client library & sample for the Microsoft Emotion API, part of [Cognitive Services](https://www.microsoft.com/cognitive-services).
 * [Learn about the API](https://www.microsoft.com/cognitive-services/en-us/emotion-api)
 * [View the documentation](https://www.microsoft.com/cognitive-services/en-us/emotion-api/documentation)
 * [More Emotion API SDKs & Samples]()
