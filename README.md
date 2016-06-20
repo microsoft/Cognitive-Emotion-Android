@@ -1,6 +1,11 @@
-The client library
-==================
+# Microsoft Emotion API: Android SDK
+This repo contains the Android client library & sample for the Microsoft Emotion API, part of Cognitive Services.
+* [Learn about the API](https://www.microsoft.com/cognitive-services/en-us/emotion-api)
+* [View the documentation](https://www.microsoft.com/cognitive-services/en-us/emotion-api/documentation)
+* [More Emotion API SDKs & Samples]()
 
+
+## The client library
 The Emotion API client library is a thin Java client wrapper for Microsoft Cognitive Services (formerly Project Oxford)
 Emotion REST APIs.
 
@@ -32,9 +37,7 @@ To do add the client library dependency from Android Studio:
 7. Pick the Project Oxford client library that you intend to use.
 8. Click "OK" to add the new dependency
 
-Order expressions
-============
-
+### Order expressions
 You can call the function ToRankedList from the Scores class, for example:
 
 ASCENDING
@@ -48,22 +51,16 @@ List<Map.Entry<String, Double>> collection = scores.ToRankedList(Order.DESCENDIN
 
 ```
 
-The sample
-==========
-
+## The sample
 This sample is an Android application to demonstrate the use of Emotion API.
 
 It demonstrates emotion detection from an image. It can identify people's faces and interpret their emotions.
 
-Requirements
-------------
-
+### Requirements
 Android OS must be Android 4.1 or higher (API Level 16 or higher)
 
-Build the sample
-----------------
-
-1. You must obtain a subscription key for Emotion API and Face API by following instructions in https://www.microsoft.com/cognitive-services. Please note that Emotion API and Face API
+### Build the sample
+1. You must obtain a subscription key for Emotion API and Face API by [following instructions on our website]( https://www.microsoft.com/cognitive-services/en-us/sign-up). Please note that Emotion API and Face API
 requires two different subscriptions.
 
 2.  Start Android Studio and open project from Emotion \> Android \> Sample folder.
@@ -81,9 +78,7 @@ requires two different subscriptions.
 <img src="SampleScreenshots/SampleRunning1.png" width="30%"/>
 <img src="SampleScreenshots/SampleRunning2.png" width="30%"/>
 
-Run the sample
---------------
-
+### Run the sample
 In Android Studio, select menu "Run", and "Run app" to launch this sample app.
 
 Once the app is launched, click on buttons to use samples of between different
@@ -95,8 +90,7 @@ from everyone in it.
 
 If you want to know what is the name of the expression with more value then you might call getExpressionName() from the Score class
 
-Contributing
-============
+## Contributing
 We welcome contributions and are always looking for new SDKs, input, and
 suggestions. Feel free to file issues on the repo and we'll address them as we can. You can also learn more about how you can help on the [Contribution
 Rules & Guidelines](</CONTRIBUTING.md>).
@@ -105,9 +99,7 @@ For questions, feedback, or suggestions about Microsoft Cognitive Services, feel
 
 -   [Cognitive Services UserVoice Forum](<https://cognitive.uservoice.com>)
 
-License
-=======
-
+## License
 All Microsoft Cognitive Services SDKs and samples are licensed with the MIT License. For more details, see
 [LICENSE](</LICENSE.md>).
 
