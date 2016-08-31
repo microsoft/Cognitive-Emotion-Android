@@ -48,12 +48,18 @@ import java.util.List;
 import java.util.Map;
 
 public class EmotionServiceRestClient implements EmotionServiceClient {
-    private static final String serviceHost = "https://api.projectoxford.ai/emotion/v1.0";
+    private static final String DEFAULT_API_ROOT = "https://api.projectoxford.ai/emotion/v1.0";
     private static final String FACE_RECTANGLES = "faceRectangles";
-    private WebServiceRequest restCall = null;
+    private final String apiRoot;
+    private final WebServiceRequest restCall;
     private Gson gson = new Gson();
 
     public EmotionServiceRestClient(String subscriptionKey) {
+        this(subscriptionKey, DEFAULT_API_ROOT);
+    }
+
+    public EmotionServiceRestClient(String subscriptionKey, String apiRoot) {
+        this.apiRoot = apiRoot.replaceAll("/$", "");
         this.restCall = new WebServiceRequest(subscriptionKey);
     }
 
@@ -65,7 +71,7 @@ public class EmotionServiceRestClient implements EmotionServiceClient {
     @Override
     public List<RecognizeResult> recognizeImage(String url, FaceRectangle[] faceRectangles) throws EmotionServiceException {
         Map<String, Object> params = new HashMap<>();
-        String path = serviceHost + "/recognize";
+        String path = apiRoot + "/recognize";
         if (faceRectangles != null && faceRectangles.length > 0) {
             params.put(FACE_RECTANGLES, getFaceRectangleStrings(faceRectangles));
         }
@@ -88,7 +94,7 @@ public class EmotionServiceRestClient implements EmotionServiceClient {
     @Override
     public List<RecognizeResult> recognizeImage(InputStream stream, FaceRectangle[] faceRectangles) throws EmotionServiceException, IOException {
         Map<String, Object> params = new HashMap<>();
-        String path = serviceHost + "/recognize";
+        String path = apiRoot + "/recognize";
         if (faceRectangles != null && faceRectangles.length > 0) {
             params.put(FACE_RECTANGLES, getFaceRectangleStrings(faceRectangles));
         }
