@@ -48,7 +48,7 @@ import java.util.List;
 import java.util.Map;
 
 public class EmotionServiceRestClient implements EmotionServiceClient {
-    private static final String DEFAULT_API_ROOT = "https://api.projectoxford.ai/emotion/v1.0";
+    private static final String DEFAULT_API_ROOT = "https://westus.api.cognitive.microsoft.com/emotion/v1.0";
     private static final String FACE_RECTANGLES = "faceRectangles";
     private final String apiRoot;
     private final WebServiceRequest restCall;
