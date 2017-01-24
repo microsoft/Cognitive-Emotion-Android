@@ -24,7 +24,7 @@ dependencies {
     //
     // Use the following line to include client library for Emotion API from Maven Central Repository
     //
-    compile 'com.microsoft.projectoxford:emotion:1.0.0'
+    compile 'com.microsoft.projectoxford:emotion:1.0.355'
 
     compile 'com.microsoft.projectoxford:face:1.0.0'
     compile 'com.android.support:appcompat-v7:21.0.3'
