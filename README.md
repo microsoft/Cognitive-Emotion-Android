@@ -21,7 +21,7 @@ dependencies {
     // Use the following line to include client library from Maven Central Repository
     // Change the version number from the search.maven.org result
     //
-    compile 'com.microsoft.projectoxford:emotion:1.0.0'
+    implementation 'com.microsoft.projectoxford:emotion:1.0.0'
 
     // Your other Dependencies...
 }
